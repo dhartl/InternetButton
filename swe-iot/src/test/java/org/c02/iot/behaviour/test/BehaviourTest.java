@@ -1,6 +1,7 @@
 package org.c02.iot.behaviour.test;
 
 import java.awt.Color;
+import java.io.IOException;
 
 import org.c02.iot.InternetButtonApi;
 import org.c02.iot.behaviour.CountAndShowLed;
@@ -29,7 +30,7 @@ public class BehaviourTest {
 			@Override
 			public void setLed(int postition, Color color) {
 				Assert.assertEquals(5, postition);
-				Assert.assertEquals(new Color(0,0,255), color);
+				Assert.assertEquals(new Color(0, 0, 255), color);
 			}
 
 			@Override
@@ -40,6 +41,12 @@ public class BehaviourTest {
 			@Override
 			public void playSound() {
 				Assert.fail();
+			}
+
+			@Override
+			public int getAxisValue(Axis axis) throws IOException {
+				Assert.fail();
+				return 0;
 			}
 		};
 

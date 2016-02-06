@@ -24,6 +24,20 @@ public interface InternetButtonApi {
 		}
 	}
 
+	public enum Axis {
+		xAxis("x"), yAxis("y"), zAxis("z");
+
+		private String direction;
+
+		private Axis(String direction) {
+			this.direction = direction;
+		}
+
+		public String getDirection() {
+			return direction;
+		}
+	}
+
 	int getButtonCounter(ButtonDirection button) throws IOException;
 
 	void resetButtonCounters() throws ParticleException;
@@ -42,4 +56,6 @@ public interface InternetButtonApi {
 	void allLedsOff() throws ParticleException;
 
 	void playSound() throws ParticleException;
+
+	int getAxisValue(Axis axis) throws IOException;
 }

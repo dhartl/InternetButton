@@ -3,6 +3,7 @@ package org.c02.iot;
 import java.awt.Color;
 import java.io.IOException;
 
+import org.c02.iot.InternetButtonApi.Axis;
 import org.c02.iot.InternetButtonApi.ButtonDirection;
 import org.c02.iot.cloud.api.ParticleApiWrapper;
 import org.c02.iot.cloud.api.ParticleException;
@@ -84,6 +85,32 @@ public class InternetButtonApiTest {
 	public void testResetButtonCounters() throws ParticleException {
 		internetButtonApi.resetButtonCounters();
 		Mockito.verify(particleWrapperApi).callMethod("reset", null);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAxisValueInvalid() throws IOException {
+		internetButtonApi.getAxisValue(null);
+	}
+
+	@Test
+	public void testGetAxisValueXAxis() throws IOException {
+		Mockito.when(particleWrapperApi.readVariable("xValue")).thenReturn(3);
+		int value = internetButtonApi.getAxisValue(Axis.xAxis);
+		Assert.assertEquals(3, value);
+	}
+
+	@Test
+	public void testGetAxisValueYAxis() throws IOException {
+		Mockito.when(particleWrapperApi.readVariable("yValue")).thenReturn(10);
+		int value = internetButtonApi.getAxisValue(Axis.yAxis);
+		Assert.assertEquals(10, value);
+	}
+
+	@Test
+	public void testGetAxisValueZAxis() throws ParticleException, IOException {
+		Mockito.when(particleWrapperApi.readVariable("zValue")).thenReturn(20);
+		int value = internetButtonApi.getAxisValue(Axis.zAxis);
+		Assert.assertEquals(20, value);
 	}
 
 }

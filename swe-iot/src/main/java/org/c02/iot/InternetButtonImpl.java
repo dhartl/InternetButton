@@ -14,6 +14,7 @@ public class InternetButtonImpl implements InternetButtonApi {
 		wrapper = wrapperInstance;
 	}
 
+	@Override
 	public int getButtonCounter(ButtonDirection button) throws IOException {
 		if (button == null) {
 			throw new IllegalArgumentException("ButtonDirection darf nicht NULL sein!");
@@ -21,6 +22,7 @@ public class InternetButtonImpl implements InternetButtonApi {
 		return wrapper.readVariable("countButton" + button.getDirectionNr());
 	}
 
+	@Override
 	public void setLed(int postition, Color color) throws ParticleException {
 
 		if (postition < 1 || postition > 12 || color == null) {
@@ -38,17 +40,28 @@ public class InternetButtonImpl implements InternetButtonApi {
 		return String.format("%0" + count + "d", color);
 	}
 
+	@Override
 	public void allLedsOff() throws ParticleException {
 		wrapper.callMethod("ledsOff", null);
 
 	}
 
+	@Override
 	public void playSound() throws ParticleException {
 		wrapper.callMethod("play", null);
 	}
 
+	@Override
 	public void resetButtonCounters() throws ParticleException {
 		wrapper.callMethod("reset", null);
+	}
+
+	@Override
+	public int getAxisValue(Axis axis) throws IOException {
+		if (axis == null) {
+			throw new IllegalArgumentException("Keine Aches angegeben!");
+		}
+		return wrapper.readVariable(axis.getDirection() + "Value");
 	}
 
 }
