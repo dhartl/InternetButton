@@ -8,8 +8,8 @@ Epic 1.2&3 Demo-Apps machen (beide), Epic 1 abschließen
 3) Beginn der Implementierung, Abschluss inkl. Testapp aber nicht in diesem Sprint
 
 Daily:
-done: Probleme mit Maven behoben (falsche Java Version)
+done: Probleme mit Maven behoben (falsche Java Version), CountAndShowLed Test umgeschrieben und Fkt. erweitert (Story 2.1)
 next: 2.1 fertig implementieren (DemoApp 
-Behinderungen: Maven/Testing hat Zeit zur Behebung gekostet.
+Behinderungen: Maven/Testing hat Zeit zur Behebung gekostet (multiCatch)
 
 Retro:
