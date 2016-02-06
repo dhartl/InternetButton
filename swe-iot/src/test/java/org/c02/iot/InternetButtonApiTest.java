@@ -58,6 +58,7 @@ public class InternetButtonApiTest {
 		internetButtonApi.setLed(6, null);
 	}
 	
+	@Test 
 	public void testLedOff() throws ParticleException {
 		internetButtonApi.allLedsOff();;
 		Mockito.verify(particleWrapperApi).callMethod("ledsOff",null);
