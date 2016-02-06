@@ -26,7 +26,7 @@ public interface InternetButtonApi {
 
 	int getButtonCounter(ButtonDirection button) throws IOException;
 
-	void resetButtonCounters();
+	void resetButtonCounters() throws ParticleException;
 
 	/**
 	 * Setzt die LED auf der Position auf die angegebene Farbe

@@ -47,9 +47,8 @@ public class InternetButtonImpl implements InternetButtonApi {
 		wrapper.callMethod("play", null);
 	}
 
-	public void resetButtonCounters() {
-		// TODO Auto-generated method stub
-
+	public void resetButtonCounters() throws ParticleException {
+		wrapper.callMethod("reset", null);
 	}
 
 }
