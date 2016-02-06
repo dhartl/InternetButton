@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import org.c02.iot.InternetButtonApi;
 import org.c02.iot.InternetButtonApi.Axis;
-import org.c02.iot.InternetButtonApi.ButtonDirection;
 import org.c02.iot.cloud.api.ParticleException;
 
 public class AxisAndBecomeRed extends AbstractBehaviour {

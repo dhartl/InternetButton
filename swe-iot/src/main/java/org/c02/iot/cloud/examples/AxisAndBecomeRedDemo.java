@@ -3,7 +3,6 @@ package org.c02.iot.cloud.examples;
 import org.c02.iot.InternetButtonApi;
 import org.c02.iot.InternetButtonImpl;
 import org.c02.iot.behaviour.AxisAndBecomeRed;
-import org.c02.iot.behaviour.CountAndBecomeRed;
 import org.c02.iot.cloud.api.ParticleApiWrapper;
 import org.c02.iot.cloud.api.ParticleApiWrapperImpl;
 
