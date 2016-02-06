@@ -8,17 +8,26 @@ public interface InternetButtonApi {
 
 	public enum ButtonDirection {
 		// Button:
-		//1     2      3     4
+		// 1 2 3 4
 		North, South, East, West
 	}
 
 	int getButtonCounter(ButtonDirection button);
-	
+
 	void resetButtonCounters();
-	
-	void setLed(int postition, Color color);
-	
+
+	/**
+	 * Setzt die LED auf der Position auf die angegebene Farbe
+	 * 
+	 * @param postition
+	 *            zwischen 1 und 12
+	 * @param color
+	 *            nicht NULL
+	 * @throws ParticleException
+	 */
+	void setLed(int postition, Color color) throws ParticleException;
+
 	void allLedsOff();
-	
+
 	void playSound() throws ParticleException;
 }

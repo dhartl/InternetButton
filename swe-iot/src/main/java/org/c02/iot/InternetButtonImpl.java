@@ -17,7 +17,7 @@ public class InternetButtonImpl implements InternetButtonApi {
 		return 0;
 	}
 
-	public void setLed(int postition, Color color) {
+	public void setLed(int postition, Color color) throws ParticleException {
 		// TODO Auto-generated method stub
 	}
 
@@ -32,7 +32,7 @@ public class InternetButtonImpl implements InternetButtonApi {
 
 	public void resetButtonCounters() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
