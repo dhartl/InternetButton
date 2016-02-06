@@ -60,11 +60,12 @@ public class InternetButtonApiTest {
 	public void testSetLedNoColor() throws ParticleException {
 		internetButtonApi.setLed(6, null);
 	}
-	
-	@Test 
+
+	@Test
 	public void testLedOff() throws ParticleException {
-		internetButtonApi.allLedsOff();;
-		Mockito.verify(particleWrapperApi).callMethod("ledsOff",null);
+		internetButtonApi.allLedsOff();
+		;
+		Mockito.verify(particleWrapperApi).callMethod("ledsOff", null);
 	}
 
 	@Test
@@ -77,6 +78,12 @@ public class InternetButtonApiTest {
 	@Test(expected = IllegalArgumentException.class)
 	public void testGetButtonCounterInvalid() throws IOException {
 		internetButtonApi.getButtonCounter(null);
+	}
+
+	@Test
+	public void testResetButtonCounters() throws ParticleException {
+		internetButtonApi.resetButtonCounters();
+		Mockito.verify(particleWrapperApi).callMethod("reset", null);
 	}
 
 }
