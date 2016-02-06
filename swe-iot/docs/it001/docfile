@@ -1,7 +1,13 @@
+
 Sprint Plan / Aufgaben
+Umfang: Epic 1 Story 1 
 1) Übersicht über Funktionalität gewinnen (gesamtes Team)
-2) Implementierung Story 1, Test/Verifikation mit Mockito - Head Programmer
+2) Implementierung Story 1, Test/Verifikation mit Mockito - Head Programmer + Isabella
 3) Pull/Push auf allen Rechnern abgeschlossen, Funktionalität von allen Rechnern aus getestet (alle)
+
+erstes Daily:
+Verständnisprobleme mit API/Wrapper -> was wird wie aufgerufen und getestet?
+-> Erklärung durch HeadProgrammer
 
 Retrospektive:
 Mockito relativ komplex zu verstehen, Head Programmer wird Tests schreiben um Test first zu gewährleisten und Fortschritt nicht zu behindern
