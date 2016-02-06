@@ -4,3 +4,14 @@ Team 2 Story 3.1 (mit HeadProgrammer)
 Aufgaben:
 für 3.1 Planung/Evaluierung der Bewegungssensor-Fkt, schreiben der Tests, Implementierung
 für 2.3 wird Fkt aus 2.2 verwendet und adaptiert, geringerer Aufwand als gedacht
+
+Daily Scrum:
+2.3 erledigt, funktioniert
+3.1 grundsätzlich auch fortgeschritten -> aber technische Probleme mit dem Lagesensor (immer 0) des InternetButtons!
+Überlegung, in der Wartezeit auf den InternetButton Tests für 3.2 und 3.3 zu schreiben aber Probleme weil der Wertebereich des Sensors unbekannt ist.
+
+Retro:
+Läuft recht gut, Problem mit dem Button -> Sensoren funktionieren nicht wirklich, deshalb "echtes" Testen schlecht möglich.
+Durch übrige Zeit tiefere Beschäftigung mit dem Button/Sensoren.
+
+
