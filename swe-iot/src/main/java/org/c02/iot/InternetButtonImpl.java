@@ -18,7 +18,24 @@ public class InternetButtonImpl implements InternetButtonApi {
 	}
 
 	public void setLed(int postition, Color color) throws ParticleException {
-		// TODO Auto-generated method stub
+		
+		String temp; 
+		if(postition < 10)
+		{
+		temp = "0" + Integer.toString(postition);
+		}
+		else
+		{
+			temp = Integer.toString(postition);
+		}
+		
+		String tempColor;
+		tempColor = Integer.toString(color.getRed()) + Integer.toString(color.getGreen()) +Integer.toString(color.getBlue());
+		
+		temp = temp + tempColor;
+		
+		wrapper.callMethod("led", temp);
+		
 	}
 
 	public void allLedsOff() {
