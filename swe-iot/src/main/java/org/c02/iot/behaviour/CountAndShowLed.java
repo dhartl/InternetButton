@@ -17,7 +17,14 @@ public class CountAndShowLed extends AbstractBehaviour {
 	public void run() {
 		try {
 			int buttonCounter = button.getButtonCounter(ButtonDirection.North);
-			button.setLed(buttonCounter, Color.GREEN);
+			if(buttonCounter > 0){
+				if(buttonCounter%12==0){
+					buttonCounter=12;
+				}
+				else
+					buttonCounter=buttonCounter%12;
+				button.setLed(buttonCounter, Color.GREEN);
+			}
 		} catch (ParticleException | IOException e) {
 			e.printStackTrace();
 		}

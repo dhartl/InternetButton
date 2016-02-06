@@ -17,7 +17,7 @@ public class BehaviourTest {
 			@Override
 			public int getButtonCounter(ButtonDirection button) {
 				if (button == ButtonDirection.North)
-					return 5;
+					return 17;
 				return 0;
 			}
 

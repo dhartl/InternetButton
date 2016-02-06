@@ -1,5 +1,15 @@
 Sprint Plan / Aufgaben
 Umfang: Epic 1 Story 2+3 fertigstellen
-Aufteilung:
-1) Demo-Apps machen (beide)
-2) Button Funktionalität fertigstellen
+Aufteilung HeadProgrammer unterstützt Team 2, implementiert zudem mit Isabella 1.2 fertig.
+Inhalte:
+Epic 1.2&3 Demo-Apps machen (beide), Epic 1 abschließen
+1) Button Funktionalität fertigstellen
+2) Epic 2.1 Planung der Tests, Umsetzung der Tests
+3) Beginn der Implementierung, Abschluss inkl. Testapp aber nicht in diesem Sprint
+
+Daily:
+done: Probleme mit Maven behoben (falsche Java Version)
+next: 2.1 fertig implementieren (DemoApp 
+Behinderungen: Maven/Testing hat Zeit zur Behebung gekostet.
+
+Retro:
