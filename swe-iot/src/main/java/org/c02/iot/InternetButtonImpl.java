@@ -1,6 +1,7 @@
 package org.c02.iot;
 
 import java.awt.Color;
+import java.io.IOException;
 
 import org.c02.iot.cloud.api.ParticleApiWrapper;
 import org.c02.iot.cloud.api.ParticleException;
@@ -13,8 +14,11 @@ public class InternetButtonImpl implements InternetButtonApi {
 		wrapper = wrapperInstance;
 	}
 
-	public int getButtonCounter(ButtonDirection button) {
-		return 0;
+	public int getButtonCounter(ButtonDirection button) throws IOException {
+		if (button == null) {
+			throw new IllegalArgumentException("ButtonDirection darf nicht NULL sein!");
+		}
+		return wrapper.readVariable("countButton" + button.getDirectionNr());
 	}
 
 	public void setLed(int postition, Color color) throws ParticleException {

@@ -1,9 +1,12 @@
 package org.c02.iot;
 
 import java.awt.Color;
+import java.io.IOException;
 
+import org.c02.iot.InternetButtonApi.ButtonDirection;
 import org.c02.iot.cloud.api.ParticleApiWrapper;
 import org.c02.iot.cloud.api.ParticleException;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -62,6 +65,18 @@ public class InternetButtonApiTest {
 	public void testLedOff() throws ParticleException {
 		internetButtonApi.allLedsOff();;
 		Mockito.verify(particleWrapperApi).callMethod("ledsOff",null);
+	}
+
+	@Test
+	public void testGetButtonCounterNorth() throws IOException {
+		Mockito.when(particleWrapperApi.readVariable("countButton1")).thenReturn(3);
+		int counter = internetButtonApi.getButtonCounter(ButtonDirection.North);
+		Assert.assertEquals(3, counter);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetButtonCounterInvalid() throws IOException {
+		internetButtonApi.getButtonCounter(null);
 	}
 
 }

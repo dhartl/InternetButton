@@ -8,12 +8,11 @@ URL: https://github.com/dhartl/InternetButton.git
 
 Release Plan:
 IT001 -> Epic 1 Story 1
-IT002 -> Epic 1 Story 2 + 3
-IT003 -> Epic 2 Story 1
-IT004 -> Epic 3 Story 1
-IT005 -> Epic 3 Story 2 
-IT006 -> Epic 3 Story 3
-(?)IT007 -> Epic 4 Story 1
+IT002 -> n/A
+IT003 -> Epic 1 Story 2+3
+IT005 -> Epic 3 Story 1
+IT006 -> Epic 3 Story 2 
+IT007 -> Epic 3 Story 3
 
 IT000
 Probleme mit git behoben, classpath Änderungen verursachte Probleme..
@@ -24,5 +23,5 @@ Die Stories sind jetzt eigentlich so gewichtet, dass die erste Story in einem ne
  weil es am komplexesten sein wird (jeweils neues Themengebiet)
  [obwohl die Stories in beliebiger Reihenfolge innerhalb des Epics durchgeführt werden können,
  es scheint aber sinnvoll immer mit Story 1 anzufangen]
-
+Verzögerung bei IT2 -> Implementierung dauert länger.
   
