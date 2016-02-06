@@ -14,7 +14,6 @@ public class AxisReaderDemo {
 	static ParticleApiWrapper api = new ParticleApiWrapperImpl(DemoConstants.deviceId, DemoConstants.accessToken);
 
 	public static void main(String[] args) throws IOException, ParticleException {
-		int readVariable = api.readVariable("xValue");
 		InternetButtonApi button = new InternetButtonImpl(api);
 		Arrays.stream(Axis.values()).forEach(axis -> {
 			try {
