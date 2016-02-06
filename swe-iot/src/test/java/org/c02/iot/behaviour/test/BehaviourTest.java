@@ -29,7 +29,7 @@ public class BehaviourTest {
 			@Override
 			public void setLed(int postition, Color color) {
 				Assert.assertEquals(5, postition);
-				Assert.assertEquals(Color.GREEN, color);
+				Assert.assertEquals(new Color(0,0,255), color);
 			}
 
 			@Override

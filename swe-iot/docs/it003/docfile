@@ -9,7 +9,10 @@ Epic 1.2&3 Demo-Apps machen (beide), Epic 1 abschließen
 
 Daily:
 done: Probleme mit Maven behoben (falsche Java Version), CountAndShowLed Test umgeschrieben und Fkt. erweitert (Story 2.1)
-next: 2.1 fertig implementieren (DemoApp 
+next: 2.1 fertig implementieren (DemoApps). 
 Behinderungen: Maven/Testing hat Zeit zur Behebung gekostet (multiCatch)
 
 Retro:
+gut gegangen, viel weitergebracht. erster Epic abgeschlossen und weite Teile von Epic 2 geschafft. 
+Da noch Zeit über gewesen, Story 2.2 gemacht (welche ja ürsprünglich auch im ReleasePlan für IT03 vorgesehen war)
+InternetButton macht Probleme da die WLAN-Verbindung nicht sehr stabil scheint
