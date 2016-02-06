@@ -27,7 +27,7 @@ public interface InternetButtonApi {
 	 */
 	void setLed(int postition, Color color) throws ParticleException;
 
-	void allLedsOff();
+	void allLedsOff() throws ParticleException;
 
 	void playSound() throws ParticleException;
 }
