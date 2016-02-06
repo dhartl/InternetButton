@@ -19,7 +19,6 @@ public class InternetButtonImpl implements InternetButtonApi {
 
 	public void setLed(int postition, Color color) throws ParticleException {
 
-		String temp = "";
 		if (postition < 1 || postition > 12 || color == null) {
 			throw new IllegalArgumentException();
 
