@@ -18,3 +18,11 @@ IT006 -> Epic 3 Story 3
 IT000
 Probleme mit git behoben, classpath Änderungen verursachte Probleme..
 
+Allgemeine Anmerkungen zum Projektverlauf (chronologisch)
+Überlegung nach IT1: Evtl geht sich in IT3 auch eine zweite Story aus Epic 2 aus.
+Die Stories sind jetzt eigentlich so gewichtet, dass die erste Story in einem neuen Themengebiet viele Storypoints hat
+ weil es am komplexesten sein wird (jeweils neues Themengebiet)
+ [obwohl die Stories in beliebiger Reihenfolge innerhalb des Epics durchgeführt werden können,
+ es scheint aber sinnvoll immer mit Story 1 anzufangen]
+
+  
