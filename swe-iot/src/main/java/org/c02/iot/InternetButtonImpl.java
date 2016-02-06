@@ -38,8 +38,8 @@ public class InternetButtonImpl implements InternetButtonApi {
 		
 	}
 
-	public void allLedsOff() {
-		// TODO Auto-generated method stub
+	public void allLedsOff() throws ParticleException {
+		wrapper.callMethod("ledsOff",null);
 
 	}
 
