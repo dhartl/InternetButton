@@ -9,10 +9,10 @@ URL: https://github.com/dhartl/InternetButton.git
 Release Plan:
 IT001 -> Epic 1 Story 1
 IT002 -> (keine Änderung)
-IT003 -> Epic 1 Story 2+3
-IT005 -> Epic 2 Story 1
-IT006 -> Epic 3 Story 1
-IT007 -> Epic 3 Story 2
+IT003 -> Epic 1 Story 2+3, Epic 2 Story 1+2
+IT004 -> Epic 2 Story 3, Epic 3 Story 1 
+IT005 -> Epic 3 Story 2
+IT006 -> Epic 3 Story 3
 
 IT000
 Probleme mit git behoben, classpath Änderungen verursachte Probleme..
